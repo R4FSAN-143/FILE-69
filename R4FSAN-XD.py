@@ -187,6 +187,7 @@ syed =[
 'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-A127M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/19.0 Chrome/102.0.5005.125 Mobile Safari/537.36',
 'Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile SFB/15.0.0034.21 Safari/537.36',
 ]
+    os.system('clear')
 logo=("""
 \033[97;1m########     ###    ########  ######     ###    ##    ## 
 \033[97;1m##     ##   ## ##   ##       ##    ##   ## ##   ###   ## 
